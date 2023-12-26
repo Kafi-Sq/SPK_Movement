@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  height: 100vh;
+}
+
+.home-btn,
+.board-members,
+main,
+.events {
+  background-color: #282828;
+}
+
+/* LEFT-TOP STYLES */
+.home-btn {
+  width: 250px;
+  position: fixed;
+  left: 20px;
+  top: 30px;
+  border-radius: 8px;
+  padding: 0px 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-btn div {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.home-btn p {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.home-btn i {
+  margin-right: 10px;
+}
+
+.home-btn input {
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #454545;
+  color: white;
+  font-weight: bold;
+  width: 250px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.home-btn input::placeholder {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-weight: bold;
+}
+
+.home-btn input:focus {
+  outline: none;
+  border-bottom: 1px solid #1a1a1a;
+}
+/* LEFT-TOP STYLES */
+
+/* LEFT-BOTTOM STYLES */
+.board-members {
+  width: 250px;
+  position: fixed;
+  left: 20px;
+  top: 160px;
+  border-radius: 8px;
+  padding: 0px 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  bottom: 30px;
+  overflow-y: auto;
+}
+
+.board-members .member {
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.board-members .board-title {
+  margin: 10px 0px;
+  padding-bottom: 6px;
+  font-size: 20px;
+}
+
+.board-members .member:hover {
+  background-color: #1a1a1a;
+}
+
+.board-members .member-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.board-members .member img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 40px;
+  margin: 0 10px 0 0;
+}
+
+.board-members p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.board-members .member-positionP {
+  font-size: 14px;
+  font-style: italic;
+}
+/* LEFT-BOTTOM STYLES */
+
+/* MIDDLE STYLES */
+main {
+  right: 300px;
+  position: fixed;
+  left: 300px;
+  top: 30px;
+  border-radius: 8px;
+  padding: 0px 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  bottom: 30px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #717171;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3b3b;
+}
+
+main .mainHeader,
+main .main-logo-location {
+  background-color: #1a1a1a;
+  padding: 10px;
+  margin: 10px 20px;
+  border-radius: 8px;
+}
+main .mainHeader h1 {
+  margin: 0;
+}
+
+main .mainHeader p {
+  margin: 0;
+}
+
+main .mainHeader .org-info {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+main .main-logo-location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+  padding-left: 100px;
+  font-size: 20px;
+}
+
+main .mainHeader .article {
+  padding: 4px 20px;
+}
+
+main .main-logo-location img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+main .article p {
+  margin: 10px 0;
+}
+
+main .article img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+main .article img:hover {
+  box-shadow: 2px 2px 15px rgb(168, 168, 168);
+}
+
+/* MIDDLE STYLES */
+
+/* RIGHT STYLES */
+.events {
+  width: 250px;
+  position: fixed;
+  right: 20px;
+  top: 30px;
+  border-radius: 8px;
+  padding: 0px 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  bottom: 30px;
+  overflow-y: auto;
+}
+
+.events .event {
+  background-color: #1a1a1a;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.events .event img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.events .event p {
+  margin: 4px 0;
+  font-style: italic;
+  font-size: 14px;
+}
+/* RIGHT STYLES */
